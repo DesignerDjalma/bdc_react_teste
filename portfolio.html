@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      h1 {
+        padding: 32px;
+      }
+      body {
+        font-family: "Franklin Gothic", "Arial Narrow", Arial, sans-serif;
+        color: #ffffff;
+        background-color: #000000;
+        margin: 0px;
+        padding: 0px;
+      }
+      .info-title {
+        height: 32px;
+        width: auto;
+        color: rgb(230, 194, 249);
+        clip-path: polygon(
+          86% 0,
+          100% 24%,
+          100% 60%,
+          100% 100%,
+          0 98%,
+          0% 60%,
+          0 0
+        );
+        background: linear-gradient(126.68deg, #012241 15.92%, #000711 91.09%);
+        border-radius: 5px;
+        padding: 0px 22px 0px 22px;
+        width: fit-content;
+        height: auto;
+        top: -28px;
+        left: -10px;
+        position: absolute;
+      }
+      .info-box {
+        border: 2px solid #f057f8;
+        position: relative;
+        padding: 30px;
+        width: 300px;
+        height: fit-content;
+        margin: 32px 12px 12px 32px;
+        border-radius: 8px;
+        color: #ffffff;
+      }
+      .container-grupo1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        /* display: flex;
+        flex-wrap: wrap; */
+      }
+      /* Estilos responsivos */
+      @media (max-width: 768px) {
+        .info-box {
+          width: 100%; /* Ocupa toda a largura da tela em dispositivos menores */
+          max-width: 700px; /* Define um tamanho máximo */
+        }
+      }
+
+      .main-header {
+        background-color: #0d1b2a;
+        padding: 15px 30px;
+        border-bottom: 2px solid #f057f8;
+      }
+
+      .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .nav-bar {
+        display: flex;
+        align-items: center;
+      }
+
+      .menu-toggle img {
+        width: 25px;
+        cursor: pointer;
+        margin-right: 20px;
+      }
+
+      .logo img {
+        width: 60px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav-link {
+        color: #d7f9ff;
+        text-decoration: none;
+        font-weight: bold;
+        position: relative;
+        padding: 10px;
+      }
+
+      .nav-link:hover {
+        color: #f057f8;
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #f057f8;
+        transition: width 0.3s ease;
+      }
+
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      .menu-open {
+        display: none;
+      }
+
+      .menu-close {
+        display: none;
+      }
+      .img-logo {
+        filter: invert();
+      }
+    </style>
+
+    <header class="main-header">
+      <div class="header-content">
+        <nav class="nav-bar">
+          <div class="menu-toggle">
+            <img
+              class="menu-open"
+              src="/assets/img/open.svg"
+              alt="Abrir Menu"
+            />
+            <img
+              class="menu-close"
+              src="/assets/img/close.svg"
+              alt="Fechar Menu"
+            />
+          </div>
+          <a href="./index.html" class="logo">
+            <img
+              width="1"
+              class="img-logo"
+              alt="Logo do Beco dos Códigos"
+              src="./assets/img/logov1.png"
+            />
+          </a>
+          <div class="nav-links">
+            <a href="./portfolio.html" class="nav-link">Portfólios</a>
+            <a href="./projetos.html" class="nav-link">Projetos</a>
+            <a href="./servicos.html" class="nav-link">Serviços</a>
+            <a href="./contato.html" class="nav-link">Contato</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <h1>Bem-vindo ao PORTFÓLIO</h1>
+
+    <div class="container-grupo1">
+      <div class="info-box">
+        <div class="info-title"></div>
+        <h3>Espacinho dedicado a mostrar mais sobre o portfolio</h3>
+        <p>
+          A página ainda encontra-se indisponível, Em breve.
+        </p>
+      </div>
+
+    </div>
+  </body>
+</html>

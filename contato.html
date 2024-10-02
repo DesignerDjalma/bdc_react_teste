@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      h1 {
+        padding: 32px;
+      }
+      body {
+        font-family: "Franklin Gothic", "Arial Narrow", Arial, sans-serif;
+        color: #ffffff;
+        background-color: #000000;
+        margin: 0px;
+        padding: 0px;
+      }
+      .info-title {
+        height: 32px;
+        width: auto;
+        color: rgb(230, 194, 249);
+        clip-path: polygon(
+          86% 0,
+          100% 24%,
+          100% 60%,
+          100% 100%,
+          0 98%,
+          0% 60%,
+          0 0
+        );
+        background: linear-gradient(126.68deg, #012241 15.92%, #000711 91.09%);
+        border-radius: 5px;
+        padding: 0px 22px 0px 22px;
+        width: fit-content;
+        height: auto;
+        top: -28px;
+        left: -10px;
+        position: absolute;
+      }
+      .info-box {
+        border: 2px solid #f057f8;
+        position: relative;
+        padding: 30px;
+        /* width: 300px; */
+        height: fit-content;
+        margin: 32px 12px 12px 32px;
+        border-radius: 8px;
+        color: #ffffff;
+      }
+      .container-grupo1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        /* display: flex;
+        flex-wrap: wrap; */
+      }
+      /* Estilos responsivos */
+      @media (max-width: 768px) {
+        .info-box {
+          width: 100%; /* Ocupa toda a largura da tela em dispositivos menores */
+          max-width: 700px; /* Define um tamanho máximo */
+        }
+      }
+
+      .main-header {
+        background-color: #0d1b2a;
+        padding: 15px 30px;
+        border-bottom: 2px solid #f057f8;
+      }
+
+      .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .nav-bar {
+        display: flex;
+        align-items: center;
+      }
+
+      .menu-toggle img {
+        width: 25px;
+        cursor: pointer;
+        margin-right: 20px;
+      }
+
+      .logo img {
+        width: 60px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav-link {
+        color: #d7f9ff;
+        text-decoration: none;
+        font-weight: bold;
+        position: relative;
+        padding: 10px;
+      }
+
+      .nav-link:hover {
+        color: #f057f8;
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #f057f8;
+        transition: width 0.3s ease;
+      }
+
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      .menu-open {
+        display: none;
+      }
+
+      .menu-close {
+        display: none;
+      }
+      .img-logo {
+        filter: invert();
+      }
+      .form-container {
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo transparente */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.form-content h1 {
+  color: #d7f9ff;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.form-content p {
+  color: #d7f9ff;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  color: #d7f9ff;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.input-group input, 
+.input-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #d7f9ff;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.input-group input::placeholder {
+  color: #d7f9ff;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  outline: none;
+  border-color: #f057f8;
+}
+
+.submit-btn {
+  background-color: #00c86b;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #00ff85;
+  transform: scale(1.05);
+}
+
+/* Definindo o link para abrir uma janela do Telegram com a mensagem pré-configurada */
+.submit-btn:active {
+  transform: scale(0.98);
+}
+    </style>
+
+    <header class="main-header">
+      <div class="header-content">
+        <nav class="nav-bar">
+          <div class="menu-toggle">
+            <img
+              class="menu-open"
+              src="/assets/img/open.svg"
+              alt="Abrir Menu"
+            />
+            <img
+              class="menu-close"
+              src="/assets/img/close.svg"
+              alt="Fechar Menu"
+            />
+          </div>
+          <a href="./index.html" class="logo">
+            <img
+              width="1"
+              class="img-logo"
+              alt="Logo do Beco dos Códigos"
+              src="./assets/img/logov1.png"
+            />
+          </a>
+          <div class="nav-links">
+            <a href="./portfolio.html" class="nav-link">Portfólios</a>
+            <a href="./projetos.html" class="nav-link">Projetos</a>
+            <a href="./servicos.html" class="nav-link">Serviços</a>
+            <a href="./contato.html" class="nav-link">Contato</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <h1>Bem-vindo ao CONTATO</h1>
+
+    <div class="container-grupo1">
+      <div class="info-box">
+        <div class="form-container">
+          <div class="form-content">
+            <img src="./assets/img/meme1.jpg" height="132px" alt="">
+            <h1>Entre em contato conosco! 😊</h1>
+            <p>Queremos saber mais sobre você e como podemos ajudar. Não seja tímido! 💬<br>Seu próximo passo na programação começa aqui! 🚀</p>
+            
+            <form action="https://t.me/+5591983914832" method="get" target="_blank">
+              <div class="input-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+              </div>
+              
+              <div class="input-group">
+                <label for="email">Melhor e-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+              </div>
+      
+              <div class="input-group">
+                <label for="profession">Profissão</label>
+                <select id="profession" name="profession" required>
+                  <option value="" disabled selected>Selecione sua profissão</option>
+                  <option value="dev">Dev</option>
+                  <option value="tecnico">Técnico</option>
+                  <option value="servidor">Servidor</option>
+                  <option value="universitario">Universitário</option>
+                  <option value="estudante">Estudante</option>
+                  <option value="vagabundo">Vagabundo</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+      
+              <button type="submit" class="submit-btn">Entrar em Contato</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

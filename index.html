@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      h1 {
+        padding: 32px;
+      }
+      body {
+        font-family: "Franklin Gothic", "Arial Narrow", Arial, sans-serif;
+        color: #ffffff;
+        background-color: #000000;
+        margin: 0px;
+        padding: 0px;
+      }
+      .info-title {
+        height: 32px;
+        width: auto;
+        color: rgb(230, 194, 249);
+        clip-path: polygon(
+          86% 0,
+          100% 24%,
+          100% 60%,
+          100% 100%,
+          0 98%,
+          0% 60%,
+          0 0
+        );
+        background: linear-gradient(126.68deg, #012241 15.92%, #000711 91.09%);
+        border-radius: 5px;
+        padding: 0px 22px 0px 22px;
+        width: fit-content;
+        height: auto;
+        top: -28px;
+        left: -10px;
+        position: absolute;
+      }
+      .info-box {
+        border: 2px solid #f057f8;
+        position: relative;
+        padding: 30px;
+        max-width: 500px;
+        height: fit-content;
+        margin: 32px 12px 12px 32px;
+        border-radius: 8px;
+        color: #ffffff;
+      }
+      .container-grupo1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        /* display: flex;
+        flex-wrap: wrap; */
+      }
+      /* Estilos responsivos */
+      @media (max-width: 768px) {
+        .info-box {
+          width: 100%; /* Ocupa toda a largura da tela em dispositivos menores */
+          max-width: 700px; /* Define um tamanho máximo */
+        }
+      }
+
+      .main-header {
+        background-color: #0d1b2a;
+        padding: 15px 30px;
+        border-bottom: 2px solid #f057f8;
+      }
+
+      .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .nav-bar {
+        display: flex;
+        align-items: center;
+      }
+
+      .menu-toggle img {
+        width: 25px;
+        cursor: pointer;
+        margin-right: 20px;
+      }
+
+      .logo img {
+        width: 60px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav-link {
+        color: #d7f9ff;
+        text-decoration: none;
+        font-weight: bold;
+        position: relative;
+        padding: 10px;
+      }
+
+      .nav-link:hover {
+        color: #f057f8;
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #f057f8;
+        transition: width 0.3s ease;
+      }
+
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      .menu-open {
+        display: none;
+      }
+
+      .menu-close {
+        display: none;
+      }
+      .img-logo {
+        filter: invert();
+      }
+      .arte-central img {
+        width: 320px;
+      }
+    </style>
+
+    <header class="main-header">
+      <div class="header-content">
+        <nav class="nav-bar">
+          <div class="menu-toggle">
+            <img
+              class="menu-open"
+              src="/assets/img/open.svg"
+              alt="Abrir Menu"
+            />
+            <img
+              class="menu-close"
+              src="/assets/img/close.svg"
+              alt="Fechar Menu"
+            />
+          </div>
+          <a href="./index.html" class="logo">
+            <img
+              width="1"
+              class="img-logo"
+              alt="Logo do Beco dos Códigos"
+              src="./assets/img/logov1.png"
+            />
+          </a>
+          <div class="nav-links">
+            <a href="./portfolio.html" class="nav-link">Portfólios</a>
+            <a href="./projetos.html" class="nav-link">Projetos</a>
+            <a href="./servicos.html" class="nav-link">Serviços</a>
+            <a href="./contato.html" class="nav-link">Contato</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <h1>Bem-vindo ao Beco dos Códigos</h1>
+
+    <div class="central">
+      <div class="container-grupo1">
+        <div class="arte-central">
+          <img src="./assets/img/artv1.png" alt="Arte" />
+        </div>
+
+        <div class="info-box">
+          <div class="info-title">
+            <h2>Principais Projetos</h2>
+          </div>
+          <h3>Descubra nossas especializações</h3>
+          <p>
+            - <strong>Automação de Processos</strong>: Implementamos sistemas
+            para automatizar tarefas repetitivas.
+          </p>
+          <p>
+            - <strong>WebGIS Interativo</strong>: Criamos mapas dinâmicos e
+            interativos para visualização de dados geoespaciais.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <div class="info-title">
+            <h2>Sobre</h2>
+          </div>
+          <h3>Especialidades</h3>
+          <p>- Desenvolvimento Backend em Python</p>
+          <p>- Automação de Processos</p>
+          <p>- Geoprocessamento com Python</p>
+          <p>
+            “Minha paixão é transformar problemas em soluções através da
+            programação.”
+          </p>
+        </div>
+
+        <div class="info-box">
+          <div class="info-title">
+            <h2>Sobre</h2>
+          </div>
+          <h3>Especialidades</h3>
+          <p>- Programação em C</p>
+          <p>- Geoprocessamento de dados complexos</p>
+          <p>- Desenvolvimento Web com React</p>
+          <p>“A programação é uma arte e uma ciência ao mesmo tempo.”</p>
+        </div>
+
+        <div class="info-box">
+          <div class="info-title">
+            <h2>Portfólio de Djalma</h2>
+          </div>
+          <h3>Projetos em Destaque</h3>
+          <p>
+            - <strong>Projeto X</strong>: Ferramenta de automação para
+            geoprocessamento com Python e PostGIS.
+          </p>
+          <p>
+            - <strong>Projeto Y</strong>: Sistema de análise de grandes volumes
+            de dados geoespaciais.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <div class="info-title">
+            <h2>Portfólio</h2>
+          </div>
+          <h3>Projetos em Destaque</h3>
+          <p>
+            - <strong>Projeto Z</strong>: Sistema WebGIS para monitoramento
+            ambiental.
+          </p>
+          <p>
+            - <strong>Projeto W</strong>: Desenvolvimento de algoritmos para
+            processamento de imagens de satélite.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <div class="info-title">
+            <h2>WebGIS</h2>
+          </div>
+          <h3>Funcionalidades e Tecnologias</h3>
+          <p>
+            - <strong>Tecnologias Usadas:</strong> Frontend: React, Leaflet;
+            Backend: Python, Flask, PostgreSQL/PostGIS.
+          </p>
+          <p>
+            O WebGIS desenvolvido foi usado para monitorar o uso de solo e
+            detectar mudanças no padrão de cultivo.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <div class="info-title">
+            <h2>Automação</h2>
+          </div>
+          <h3>Benefícios</h3>
+          <p>
+            - Redução de custos e tempo com a automação de tarefas repetitivas.
+          </p>
+          <p>
+            - Integração de ferramentas para facilitar a gestão diária de
+            negócios.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <div class="info-title">
+            <h2>Geoprocessamento</h2>
+          </div>
+          <h3>O que fazemos</h3>
+          <p>
+            - Criação de soluções para visualização e análise de dados
+            geoespaciais.
+          </p>
+          <p>
+            - Implementação de sistemas GIS customizados para empresas e
+            instituições.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <div class="info-title">
+            <h2>Automação</h2>
+          </div>
+          <h3>Benefícios</h3>
+          <p>
+            - Redução de custos e tempo com a automação de tarefas repetitivas.
+          </p>
+          <p>
+            - Integração de ferramentas para facilitar a gestão diária de
+            negócios.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <div class="info-title">
+            <h2>Blog e Tutoriais</h2>
+          </div>
+          <h3>Artigos Recentes</h3>
+          <p>
+            -
+            <a href="./blog/automacao-python"
+              >Como usar Python para automação de processos</a
+            >
+          </p>
+          <p>
+            -
+            <a href="./blog/leaflet-mapas"
+              >Tutorial: Criação de mapas interativos com Leaflet</a
+            >
+          </p>
+          <p>
+            -
+            <a href="./blog/webgis-tutorial"
+              >Desenvolvimento de um WebGIS do zero</a
+            >
+          </p>
+        </div>
+
+        <div class="info-box">
+          <div class="info-title">
+            <h2>Fale Conosco</h2>
+          </div>
+          <h3>Entre em contato com a gente!</h3>
+          <p>- <strong>E-mail:</strong> contato@becodocodigos.com</p>
+          <p>
+            - <strong>LinkedIn:</strong>
+            <a href="https://linkedin.com/in/djalma">Perfil no LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
